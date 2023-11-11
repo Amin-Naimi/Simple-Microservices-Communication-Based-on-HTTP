@@ -25,7 +25,7 @@ public class GatewayApplication {
 	RouteLocator gatewayRoutes(RouteLocatorBuilder builder){
 		return builder.routes()
 				//.route(r->r.path("/artun/app/**").uri("lb://USERS-SERVICES"))
-				.route(r->r.path("node/artune/**").uri("lb://CUSTOMER-SERVICE"))
+				.route(r->r.path("/node/artune/**").uri("lb://CUSTOMER-SERVICE"))
 				.build();
 	}
 

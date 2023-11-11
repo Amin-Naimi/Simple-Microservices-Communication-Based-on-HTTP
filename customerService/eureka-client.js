@@ -6,7 +6,7 @@ exports.registerWithEureka = function(appName, PORT) {
     const client = new Eureka({
     instance: {
       app: appName,
-      hostName: `localhost:${appName}:${PORT}`,
+      hostName: `localhost`,
       ipAddr: '127.0.0.1',
       statusPageUrl: `http://localhost:${PORT}/${appName}`,
 

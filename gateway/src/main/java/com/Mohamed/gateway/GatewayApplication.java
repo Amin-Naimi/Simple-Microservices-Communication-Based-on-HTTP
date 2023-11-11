@@ -24,7 +24,7 @@ public class GatewayApplication {
 	@Bean
 	RouteLocator gatewayRoutes(RouteLocatorBuilder builder){
 		return builder.routes()
-				//.route(r->r.path("/artun/app/**").uri("lb://USERS-SERVICES"))
+				.route(r->r.path("/spring/**").uri("lb://SPRING-SERVICE"))
 				.route(r->r.path("/node/artune/**").uri("lb://CUSTOMER-SERVICE"))
 				.build();
 	}

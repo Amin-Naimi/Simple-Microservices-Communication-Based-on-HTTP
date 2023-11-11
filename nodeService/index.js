@@ -52,3 +52,12 @@ app.post('/node/users/add', async (req, res) => {
 app.get('/node/users/all', (req, res) => {
     res.status(200).json({ users });
 });
+
+
+app.post('/node/spring-data', (req, res) => {
+    const dataFromSpring = req.body;
+
+    console.log('Data received from Spring Boot:', dataFromSpring);
+
+    res.status(200).json({ message: 'nodejs service Repond : Data received successfully in Node.js', dataFromSpring });
+});

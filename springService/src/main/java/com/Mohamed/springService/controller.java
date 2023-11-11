@@ -10,7 +10,7 @@ public class controller {
 
     @PostMapping("/spring/authenticate")
     public String autheticate(@RequestBody model model ){
-        System.out.println("Microservice Spring Boot : Utilisateur reçu - " + model.toString());
-        return "User: "+ model.toString()+"authenticated successfully!";
+        System.out.println("Microservice Spring Boot Repond: Utilisateur reçu - " + model.toString());
+        return "Microservice Spring Boot Repond: Utilisateur reçu : User: "+ model.toString()+"authenticated successfully!";
     }
 }

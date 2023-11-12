@@ -12,7 +12,7 @@ The Node.js service communicates with the Spring service using the Axios library
 
 ## Using Feign for Communication (Version 1)
 
-The Spring service optimizes communication with the Node.js service by harnessing Feign, a declarative library designed to simplify and enhance HTTP calls.
+The Spring service optimizes communication with the Node.js service by OpenFeign, a declarative library designed to simplify and enhance HTTP calls.
 
 ## Using RestTemplate for Communication (Version 2)
 
